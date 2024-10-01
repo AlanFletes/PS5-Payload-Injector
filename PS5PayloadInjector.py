@@ -64,7 +64,7 @@ def start_transfer():
         return
 
     selected_file = file_combobox.get()
-    if selected_file == "Other":
+    if selected_file == "Select Manually":
         file_path = filedialog.askopenfilename()
     else:
         file_path = os.path.join(jar_folder, selected_file)
